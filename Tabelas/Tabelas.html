@@ -12,3 +12,138 @@
     Não usar
     - Para criar seu layout
 -->
+
+<table>
+    <caption>Pessoas por idade</caption>
+    <thead>
+        <tr>
+            <th>
+                Nome
+                <th>Idade</th>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mayk</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>Diego</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td> 2 Pessoas</td>
+        </tr>
+    </tfoot>
+</table>
+</br>
+
+<!-- 
+    2 Lojas
+    Quantos produtos foram produzidos, quantos
+    vendidos e agrupado por nome dos produtos
+-->
+
+<table>
+    <caption>produzidos x Vendidos por loja</caption>
+   <colgroup>
+    <col>
+    <col span="2" style="background-color: red ">
+    <col span="2" style="background-color: blue">
+   </colgroup>
+   
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Afonso pena</th>
+            <th colspan="2" scope="colgroup">Antônia pererira</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Vassouras</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Baldes</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+</br>
+
+<!--
+    <head>
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<!-- 
+    <meta>
+
+    Atributos
+    - charset
+    - name
+    - content
+-->
+
+<head>
+    <!-- codificação de caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- portabilidade para dispositivos mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./download-icon-best+bookmark+premium+rating+select+star+icon-1320168257340660520_512.png"> 
+</head>
+
+<!-- 
+    <meta>
+
+    - charset
+    - viewport
+    - author
+    - description
+    - robots
+-->
+
+<head>
+    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="authot" content="Thiago Moreira">
+    <meta name="description" content="Um site de teste">
+    <meta name="robots" content="index">
+</head>
+
+<!-- <meta> para redes sociais -->
+
+<head>
+    <!-- Open Graph: Facbook -->
+    <meta property="og:image" content="(link/image)">
+    <meta property="og.description" content="descrição da imagem">
+    <meta property="og.title" content="título">
+</head>
