@@ -1,4 +1,4 @@
-# Box model
+ # Box model
 
 - Fundamental para layout web
 - Maior facilidade ao aplicar CSS
@@ -63,5 +63,67 @@ widht e height não funcionam
 Somente valores horizontais de margin, padding e border funcionarão
 
 *Exemplos*
-block: '<p> <div> <section>, todos os heading '<h1><h2>...'
-inline: '<a> <strong> <span> <em>
+<!-- block: '<p> <div> <section>, todos os heading '<h1><h2>...'
+inline: '<a> <strong> <span> <em> g-->
+
+<div>um conteúdo</div> Outro conteúdo
+
+<p>um <strong>texto</strong> qualquer </p>
+
+## Margin
+
+Espaços entre os elementos
+
+- margin-top / margin-right / margin-bottom / margin-left
+- values: '<lenght>' / '<percentage> / auto
+
+'''css
+div {
+    /*shorthand*/
+    margin: 12px 16px 10px 4px;
+    margin: 12ox 16px 0;
+    margin: 8px 16px;
+    margin: 8px;
+}
+'''
+
+<!-- margin collapsing (top junta com bottom) -->
+
+mozilla.org CSS margin
+
+## Padding
+
+Preenchimento de uma caixa
+
+- padding-top / padding-right / padding-bottom / padding-left
+- values: '<lenght>' / '<percentage>' /
+
+'''css
+div{
+    /*shorthand*/
+    (conteúdo de padding px)
+}
+'''
+
+<!-- Padding poderá causar diferença na largura -->
+
+mozilla.org CSS padding
+
+## Border e outline
+
+As bordas da caixa
+
+- value: '<border-style>' / '<border-widht>' / '<border-color>'
+
+- style: solid / dotted / dashed / double / groove / ridge / inset / outset
+- widht: '<lenght>'
+- color: '<color>'
+
+OUTLINE
+
+- Não modifica o tamanho da caixa, não é parte do box model
+- Poderá ser diferente de retangular
+- Não permite ajuste individual
+- mais usada pelo user agent para acessibilidade
+
+mozilla.org CSS border
