@@ -1,7 +1,5 @@
 # NLW eSports 
 
-![preview](NLW2022/.github/feurrado.gitproject.png)
-
  >Trilha Explorer
 
 Projeto construído no evento Next Level Week da Rocketseat
