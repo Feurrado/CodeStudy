@@ -214,3 +214,117 @@
     <label for="NÃO EU NÃO QUERO">Tô de boa</label>
     <input type="radio" id="NÃO EU NÃO QUERO" name="café" value="AH NÃO">
 </fieldset>
+
+<!-- 
+    <textarea>
+    - mais de uma linha
+    - útil para grandes textos
+
+    Atributos
+    - id
+    - name
+    - rows e cols
+    - maxlenght e minlenght
+    - wrap
+ -->
+
+<label for="message">Mensagem</label>
+ <textarea wrap="soft" maxlenght="250" id="message" name="messagetext" rows="7" cols="25" ></textarea>
+
+ <!-- 
+    <select>
+    - Controle que fornece um menu de opções
+
+    <option>
+    - Contém as opções a serem selecionadas
+    - Atributos necessários
+        - value
+
+    Atributos Únicos
+    - multiple
+        - Múltiplas funções
+    - size
+  -->
+
+</br>
+
+  <label for="carselect">Qual modelo?</label>
+  <select name="carmodel" id="carselect">
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+  </select>
+
+</br>
+
+<!-- Optgroup -->
+
+    <label>Um ou mais pets:
+    <select name="pets" multiple size="4">
+        <optgroup label="pet de 4 patas">
+            <option value="dog">Catioro</option>
+            <option value="cat">Gatineo</option>
+            <option value="hamster" disabled>Hamster</option>
+
+        </optgroup>
+    </select>
+    </label>
+
+<!-- 
+    <input type="search" /> 
+
+    - Para campos de busca
+    - É igual ao campo do tipo 'text' mas poderá ser um pouco diferente dependendo do UA
+
+    # Atributos
+
+    - list / <datalist>
+    - pattern
+    - aria-label
+-->
+
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Windows</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    <label for="">Pesquisa</label>
+    <input type="search" name="q" list="searchterms" placeholder="Digite sua busca here" size="29">
+    <button>Search?</button>
+</form>
+
+<!-- range -->
+
+<input type="range" min="-10" max="10" step="2">
+
+<!-- Drawing -->
+
+</br>
+
+<!-- Exercício -->
+
+<fieldset>
+    <legend>Contato</legend>
+    <div>
+        <label for="name">Nome</label>
+    <br>
+        <input type="text" id="name" name="name" value="Seu nome">
+    <br>
+    <br>
+
+        <label for="mail">Email</label>
+    <br>
+        <input type="email" id="mail" name="mail" value="Seu Email">
+   
+        
+    <br>
+    <br>
+        <label for="message">Mensagem</label>
+    <br>
+        <textarea wrap="soft" maxlenght="250" id="message" name="messagetext" rows="7" cols="25" placeholder="Digite sua mensagem aqui"></textarea>
+    <br>
+
+    <button type="submit">SEND IT!</button>
+</fieldset>
+
