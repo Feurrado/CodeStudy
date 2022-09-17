@@ -1,2 +1,10 @@
 # HTMLstudy
-Some of my HTML and CSS studies.
+
+Some of my studies.
+
+- HTML
+- CSS
+- JavaScript
+- NodeJS
+- SQL
+- Git
