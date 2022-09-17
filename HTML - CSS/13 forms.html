@@ -1,10 +1,216 @@
 
-<form id="contato" action="">
+<!-- <form id="contato" action=""> 
     <button>enviar</button>
 </form>
 
 <fieldset form="contato" >
     <legend>Contato</legend>
     <label for="">Nome</label>
-    <input typer="text">
+    <input type="text">
+</fieldset>
+
+ ## <Datalist>
+
+    - Lista de valores como sugestão de uma tag <input>.
+    - Valores sugestivos e não obrigatórios
+    - Usuários poderão selecionar um dos valores, ou colocar um valor diferente da sugestão
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+# List
+
+- Recebe como valor o id de um <datalist> residente no mesmo documento.
+
+# Tipos de input suportados
+
+- text, search, url, tel, email, date, month, week, time, datetime-local, number, range e color.
+
+* Valores de datalis que não são compatíveis com o tipo do <input> não serão apresentados.
+
+
+* Tipos de inputs não suportados
+
+- hidden, password, checkbox, radio, file ou buttons
+
+-->
+
+<input type="text" list="fighterdata" placeholder="Choose a fighter"/>
+
+<datalist id="fighterdata">
+    <option>Mighty Apple</option>
+    <option>Super Banana</option>
+    <option>Painapple</option>
+    <option>Destrukcherry</option>
+    <option>One Pearce</option>
+</datalist>
+
+</br>
+
+<datalist id="colorsdata">
+    <option>#eb34cc</option>
+    <option>#9534eb</option>
+</datalist>
+
+<input type="color" list="colorsdata"/>
+
+<!-- 
+    <input>
+    - Um dos mais usados em formulários
+    - Aceita os mais diversos tipos de dados
+    - Um dos mais poderosos e complexos
+    - Elevado número de combinações
+
+    Atributos
+    - type
+    - name
+    - id
+
+    Atributos comuns
+    - autocomplete (vários dados)
+    - autofocus (um por página, boolean)
+    - disabled
+    - readonly
+    - form
+    - name
+    - required
+    - placeholder 
+-->
+</br>
+
+<input type="text" autocomplete="email">
+
+<!-- 
+    <input type="password"
+
+    - Place passwords with security, hide what's being typed
+    - Style depends on user agent
+
+    # Atributos
+
+    - minlenght / maxlenght
+        Quantidade de caracteres
+    - size
+        Tamanho da box
+    - pattern
+        Padrão das senhas
+    * pattern=[0-9a-fA-F]{4,8}
+ -->
+
+</br>
+ <form action="">
+
+    <input type="password"
+         required
+         pattern=[0-9a-fA-F]{8,12}
+         title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres"
+         placeholder="Insira sua senha"
+         autocomplete="new-password"
+>
+    <button type="submit">Enviar</button>
+ </form>
+
+ <!-- 
+    <input type="file"/>
+
+    - value 
+        O arquivo enviado
+    - accept
+        Tipos de arquivos aceitos
+    - files
+        Lista de arquivos
+    - multiple
+        Vários arquivos
+
+    # Envio
+        Para envio o formulário deverá utilizar o método POST e o atributo enctyte como "multipart/form-data"
+  -->
+<form action="" method="post" enctype="multipart/form-data">
+  <input type="file" accept=".ai" multiple>
+</form>
+
+<!-- 
+    <input type="color />"
+    
+    - Interface para selecionar cor
+    - Color picker
+
+    # Atributos
+    - value: RGB
+        - Se inválido, o preto será exibido
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a fim de determinar a cor
+ -->
+
+ <datalist id="colorsdata">
+    <option>#9534eb</option>
+ </datalist>
+ <input type="color" list="colorsdata">
+
+ <!-- 
+    <input type="checkbox">
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    Atributos
+    - globais
+    - value
+        * valor que o campo contém
+        * se não estiver presente, o padrão é 'on'
+    - checked
+        * para deixar o cmapo marcado por padrão
+  -->
+
+  <label for="subscribe">Receber notificações</label>
+  <input type="checkbox" name="subscribe" id="subscribe" value="1" checked>
+
+  <!-- Multiplos valores -->
+
+</br>
+
+  <fieldset>
+    <legend>Choose your fighters</legend>
+        <div>
+            <input type="checkbox" id="coding" name="interest" value="coding">
+            <label for="coding">Código</label>
+        </div>
+        <div>
+            <input type="checkbox" id="music" name="music" value="music">
+            <label for="music">música?</label>
+        </div>
+        <div>
+            <input type="checkbox" id="fruit" name="fruit" value="banana!" checked>
+            <label for="music">banana?</label>
+        </div>
+  </fieldset>
+
+  <!-- type="hidden" métricas? basicamente -->
+
+  <!-- 
+    <input type="radio">
+
+    - Projetado para selecionar uma única opção de um grupo de opções
+
+    Atributos especiais
+    - checked
+        indica que o campo foi marcado
+    - value
+        valor que aquele campo contém
+   -->
+
+<fieldset>
+    <legend>Bora tomar um café gelado cheio de açúcar?</legend>
+    <label for="MA É CLARO">Sim pô</label>
+    <input type="radio" id="MA É CLARO" name="café" value="OH YEAH">
+
+    <label for="NÃO EU NÃO QUERO">Tô de boa</label>
+    <input type="radio" id="NÃO EU NÃO QUERO" name="café" value="AH NÃO">
 </fieldset>
