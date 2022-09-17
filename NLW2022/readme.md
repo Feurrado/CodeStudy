@@ -1,6 +1,6 @@
 # NLW eSports 
 
-![preview](/.github/feurrado.gitproject.png)
+![preview](NLW2022/.github/feurrado.gitproject.png)
 
  >Trilha Explorer
 
